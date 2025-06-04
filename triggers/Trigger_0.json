@@ -1,0 +1,28 @@
+{
+    "name": "Trigger_0",
+    "type": "DATABASE",
+    "disabled": false,
+    "config": {
+        "collection": "Mental Care",
+        "database": "NutHouseAIr",
+        "full_document": true,
+        "full_document_before_change": true,
+        "match": {},
+        "maximum_throughput": false,
+        "operation_types": [
+            "UPDATE"
+        ],
+        "project": {},
+        "service_name": "Utter1",
+        "skip_catchup_events": false,
+        "tolerate_resume_errors": true,
+        "unordered": false
+    },
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "Atlas_Triggers_Trigger_0_1746444530"
+            }
+        }
+    }
+}
